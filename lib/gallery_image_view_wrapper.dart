@@ -5,6 +5,8 @@ import 'gallery_item_model.dart';
 
 // to view image in full screen
 class GalleryImageViewWrapper extends StatefulWidget {
+  final Color? appBarBackgroundColor;
+  final Color? appBarForegroundColor;
   final Color? backgroundColor;
   final int? initialIndex;
   final List<GalleryItemModel> galleryItems;
@@ -23,6 +25,8 @@ class GalleryImageViewWrapper extends StatefulWidget {
   const GalleryImageViewWrapper({
     Key? key,
     required this.titleGallery,
+    required this.appBarBackgroundColor;
+    required this.appBarForegroundColor;
     required this.backgroundColor,
     required this.initialIndex,
     required this.galleryItems,
@@ -72,6 +76,8 @@ class _GalleryImageViewWrapperState extends State<GalleryImageViewWrapper> {
       appBar: widget.showAppBar
           ? AppBar(
               title: Text(widget.titleGallery ?? "Gallery"),
+              backgroundColor: (widget.appBarBackgroundColor)? widget.appBarBackgroundColor : null,
+              foregroundColor: (widget.appBarForegroundColor)? widget.appBarForegroundColor : null,
             )
           : null,
       backgroundColor: widget.backgroundColor,
