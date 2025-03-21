@@ -76,8 +76,8 @@ class _GalleryImageViewWrapperState extends State<GalleryImageViewWrapper> {
       appBar: widget.showAppBar
           ? AppBar(
               title: Text(widget.titleGallery ?? "Gallery"),
-              backgroundColor: (widget.appBarBackgroundColor)? widget.appBarBackgroundColor : null,
-              foregroundColor: (widget.appBarForegroundColor)? widget.appBarForegroundColor : null,
+              backgroundColor: widget.appBarBackgroundColor,
+              foregroundColor: widget.appBarForegroundColor,
             )
           : null,
       backgroundColor: widget.backgroundColor,
