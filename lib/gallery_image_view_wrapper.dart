@@ -25,8 +25,8 @@ class GalleryImageViewWrapper extends StatefulWidget {
   const GalleryImageViewWrapper({
     Key? key,
     required this.titleGallery,
-    required this.appBarBackgroundColor;
-    required this.appBarForegroundColor;
+    required this.appBarBackgroundColor,
+    required this.appBarForegroundColor,
     required this.backgroundColor,
     required this.initialIndex,
     required this.galleryItems,
