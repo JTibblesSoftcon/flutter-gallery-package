@@ -8,6 +8,8 @@ import './gallery_image_view_wrapper.dart';
 import './util.dart';
 
 class GalleryImage extends StatefulWidget {
+  final Color? appBarBackgroundColor;
+  final Color? appBarForegroundColor;
   final List<String> imageUrls;
   final String? titleGallery;
   final int numOfShowImages;
@@ -33,6 +35,8 @@ class GalleryImage extends StatefulWidget {
   const GalleryImage({
     Key? key,
     required this.imageUrls,
+    this.appBarBackgroundColor,
+    this.appBarForegroundColor,
     this.titleGallery,
     this.childAspectRatio = 1,
     this.crossAxisCount = 3,
@@ -157,6 +161,8 @@ class _GalleryImageState extends State<GalleryImage> {
           reverse: widget.reverse,
           showListInGalley: widget.showListInGalley,
           showAppBar: widget.showAppBar,
+          appBarBackgroundColor: widget.appBarBackgroundColor,
+          appBarForegroundColor: widget.appBarForegroundColor,
           closeWhenSwipeUp: widget.closeWhenSwipeUp,
           closeWhenSwipeDown: widget.closeWhenSwipeDown,
           radius: widget.imageRadius,
