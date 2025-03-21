@@ -42,7 +42,7 @@ class GalleryImage extends StatefulWidget {
     this.crossAxisCount = 3,
     this.mainAxisSpacing = 5,
     this.crossAxisSpacing = 5,
-    this.numOfShowImages = 2,
+    this.numOfShowImages = 3,
     this.colorOfNumberWidget,
     this.textStyleOfNumberWidget,
     this.padding = EdgeInsets.zero,
